@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".UploadImage.UploadImgaeActivity">
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nghia"
+        android:id="@+id/edt_username"/>
+    <!-- Hình ảnh đại diện -->
+    <ImageView
+        android:id="@+id/imageViewChoose"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:src="@drawable/icon_user"
+        android:scaleType="fitCenter"/>
+
+    <!-- Nút chọn file -->
+    <Button
+        android:id="@+id/btnLoadFile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CHỌN FILE"
+        android:textAllCaps="true"
+        android:backgroundTint="@color/lavender"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="20dp"/>
+
+    <!-- Nút tải lên ảnh -->
+    <Button
+        android:id="@+id/btnUploadImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="UPLOAD IMAGES"
+        android:textAllCaps="true"
+        android:backgroundTint="@color/lavender"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="10dp"/>
+
+</LinearLayout>
